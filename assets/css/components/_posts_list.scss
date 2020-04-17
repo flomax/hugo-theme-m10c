@@ -1,11 +1,11 @@
 .posts-list {
-  padding: 0;
+  padding: 5px;
 }
 
 .posts-list-item {
   list-style: none;
   &:not(:last-child) {
-    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
   }
   padding: 0.4em 0;
 }

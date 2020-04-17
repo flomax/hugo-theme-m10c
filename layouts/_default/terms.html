@@ -1,6 +1,7 @@
 {{ define "main" }}
   <article>
-    <h1>{{ .Title }}</h1>
+    <h1>{{ if (eq .Title "Tags") }}List of all available #tagged subjects.{{ else }}{{ .Title }}{{ end }}</h1>
+    <link rel="shortcut icon" href="/favicon.png" />
     <ul class="posts-list">
       {{ range .Data.Terms.Alphabetical }}
         <li class="posts-list-item">

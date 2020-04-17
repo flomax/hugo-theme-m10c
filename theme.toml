@@ -1,7 +1,7 @@
-name = "m10c"
+name = "m10Phlux"
 license = "MIT"
 licenselink = "https://github.com/vaga/hugo-theme-m10c/blob/master/LICENSE.md"
-description = "A minimalistic (m10c) theme for bloggers"
+description = "A minimalistic (m10c) theme for bloggers, edited by @flomax"
 homepage = "https://github.com/vaga/hugo-theme-m10c"
 tags = ["blog", "minimalistic", "minimal", "responsive", "dark"]
 features = [

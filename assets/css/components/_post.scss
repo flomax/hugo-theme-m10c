@@ -1,10 +1,11 @@
 .post-title {
   color: $lightest-color;
+  size: 1.9em;
 }
 
 .post-content {
   pre {
-    border-left: 0.4em solid rgba($primary-color, .8);
+    border-left: 0.5em solid rgba($primary-color, .6);
     padding-left: 1em;
   }
   img {

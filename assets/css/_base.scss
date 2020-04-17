@@ -3,23 +3,27 @@
 }
 
 html {
-  line-height: 1.6;
+  line-height: 1.7em;
 }
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 400;
   background: $dark-color;
   color: $light-color;
+  font-size: 1.2em;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
   color: $lightest-color;
 }
 
 a {
   color: $primary-color;
-  transition: color 0.35s;
+  transition: color 0.75s;
   text-decoration: none;
 
   &:hover {
@@ -27,23 +31,33 @@ a {
   }
 }
 
-// Browsers seem to use a smaller default font-size with monospaced code
-// blocks (like 80% of the size of normal text) and that looks pretty bad with
-// small inline code-blocks in the middle of normal text (mainly because of
-// the very noticeable difference in x-height). This CSS corrects that problem.
 code {
-  font-family: monospace,monospace;
-  font-size: 1em;
-  color: rgba($light-color, .8);
+  font-family: 'Share Tech Mono', monospace;
+  display: inline;
+  // padding-inline: 3px 3px;
+  padding-top: 0.13em!important;
+  padding-bottom: 0.13em!important;
+  padding-left: 0.21em!important;
+  padding-right: 0.21em!important;
+  font-size: 0.92em;
+  color: $light-color;
+  border-radius: 0.24em;
+  background: $dark-code;
 }
 
 pre {
-  // A larger monospaced block of text (that isn't mixed with normal text)
-  // generally looks heavier than normal text with the same font size. For this
-  // reason using a smaller monospaced font size makes sense in this situation.
   code {
-    font-size: .8em;
+  font-size: 0.92em;
+  font-family: 'Share Tech Mono', monospace;
   }
+  display: inline-block;
+  //margin-right: 15px;
+  padding-top: 1.5em!important;
+  padding-bottom: 1.5em!important;
+  //padding-left: 15px!important;
+  width: 100%;
+  border-radius: 0.45em;
+  background: $dark-code;
   overflow: auto;
 }
 
@@ -53,3 +67,61 @@ pre {
 ::-moz-selection {
   background: rgba($light-color, .25);
 }
+
+td {
+  padding: 0.425rem 0; 
+  vertical-align: middle;
+}
+
+table {
+  border: 2px solid $dark-code;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+  //padding: 1em!important;
+  align-items: center;
+  float: center;
+}
+
+th {
+  float: center;
+  background-color: $darkest-color;
+  vertical-align: middle;
+  padding: 0.325rem 0;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: scale-color($dark-color, $lightness: 10%);
+  vertical-align: middle;
+  padding: 0.325rem 0;
+}
+
+tr:nth-child(odd) {
+  background-color: scale-color($dark-color, $lightness: 5%);
+  vertical-align: middle;
+  padding: 0.325rem 0;
+}
+
+tr:hover {
+  background-color: scale-color($dark-color, $lightness: -5%);
+  vertical-align: middle;
+  padding: 0.325rem 0;
+}
+
+blockquote {
+ // font-family: 'Ubuntu Mono', monospace;
+  font-size: 0.97em;
+  display: inline-block;
+  // border-left: 1.2em solid $quote-bar;
+  float: center;
+  padding-top: 1.3em!important;
+  padding-bottom: 1.3em!important;
+  padding-left: 1.3em!important;
+  padding-right: 1.3em!important;
+  width: 90%;
+  border-radius: 0.45em;
+  background: $quote-bg;
+  overflow: auto;
+}
+
